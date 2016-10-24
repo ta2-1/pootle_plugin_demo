@@ -23,4 +23,4 @@ def register_formats(**kwargs_):
 
 @provider(format_classes)
 def register_format_classes(**kwargs_):
-    return dict(custom_format=pofile)
+    return dict(foo=pofile)
