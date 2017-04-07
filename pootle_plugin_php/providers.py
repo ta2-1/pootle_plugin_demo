@@ -8,19 +8,19 @@
 
 from collections import OrderedDict
 
-from translate.storage.pypo import pofile
+from translate.storage.php import phpfile
 
 from pootle.core.delegate import format_registration, format_classes
 from pootle.core.plugin import provider
 
-from .formats import POOTLE_PLUGIN_DEMO_FORMATS
+from .formats import POOTLE_PLUGIN_PHP_FORMATS
 
 
 @provider(format_registration)
 def register_formats(**kwargs_):
-    return OrderedDict(POOTLE_PLUGIN_DEMO_FORMATS)
+    return OrderedDict(POOTLE_PLUGIN_PHP_FORMATS)
 
 
 @provider(format_classes)
 def register_format_classes(**kwargs_):
-    return dict(foo=pofile)
+    return dict(php=phpfile)

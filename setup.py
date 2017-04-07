@@ -13,10 +13,10 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='pootle_plugin_demo',
+    name='pootle_plugin_php',
     version='0.0.1',
-    description='Pootle plugin demo app',
-    url='https://github.com/translate/pootle-plugin-demo',
+    description='Pootle plugin for PHP Array support',
+    url='https://github.com/translate/pootle-plugin-php',
     author='Taras Semenenko',
     author_email='taras.semenenko@gmail.com',
     license='GPL3',
@@ -27,6 +27,6 @@ setup(
         'License :: OSI Approved :: GPL3',
         'Programming Language :: Python :: 2.7',
     ],
-    keywords='pootle plugin demo',
+    keywords='pootle plugin php',
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
     install_requires=[''])

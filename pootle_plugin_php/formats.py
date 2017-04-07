@@ -6,4 +6,9 @@
 # or later license. See the LICENSE file for a copy of the license and the
 # AUTHORS file for copyright and authorship information.
 
-default_app_config = 'pootle_plugin_demo.apps.PootlePluginDemoConfig'
+
+POOTLE_PLUGIN_PHP_FORMATS = [
+    ("custom_format",
+     dict(title='PHP Arrays',
+          extension="php",
+          template_extension="php"))]
