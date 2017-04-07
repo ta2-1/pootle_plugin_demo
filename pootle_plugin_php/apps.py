@@ -19,4 +19,3 @@ class PootlePluginPHPConfig(AppConfig):
     def ready(self):
         importlib.import_module("pootle_plugin_php.models")
         importlib.import_module("pootle_plugin_php.providers")
-        importlib.import_module("pootle_plugin_php.getters")
